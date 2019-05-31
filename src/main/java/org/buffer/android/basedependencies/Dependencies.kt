@@ -4,7 +4,10 @@ object Versions {
     const val retrofit = "2.5.0"
 }
 
-interface BaseDependencies {
+interface DependencyPaths {
+    val retrofit_converter: String
+}
+object BaseDependencies: DependencyPaths {
 
-    val retrofit_converter get() = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    override val retrofit_converter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
 }
