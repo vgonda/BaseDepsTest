@@ -5,6 +5,6 @@ object Versions {
 }
 
 open class BaseDependencies {
-    
+
     val retrofit_converter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
 }
